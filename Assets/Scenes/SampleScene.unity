@@ -177,7 +177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175602310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.52, y: -4.6000004, z: 0}
+  m_LocalPosition: {x: -4.52, y: -3.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 440092016}
@@ -344,7 +344,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &276999149
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4343,7 +4343,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.95272726
+  m_Radius: 0.7485714
 --- !u!212 &961127433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4465,7 +4465,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.95272726
+  m_Radius: 0.7485714
 --- !u!114 &978612646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,7 +4765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160267610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.1, y: 0, z: 0}
+  m_LocalPosition: {x: -9.46, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1053173775}
@@ -5012,7 +5012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266714276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.68, y: 4.41, z: 0}
+  m_LocalPosition: {x: -4.68, y: 3.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 440092016}
@@ -5312,7 +5312,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.57634616
+  m_Radius: 0.46828127
 --- !u!1 &1861432504
 GameObject:
   m_ObjectHideFlags: 0
