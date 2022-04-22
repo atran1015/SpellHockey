@@ -14,4 +14,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "CreditsScene");
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("quitting game");
+        Application.Quit();
+    }
 }
