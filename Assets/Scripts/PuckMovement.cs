@@ -6,7 +6,9 @@ public class PuckMovement : MonoBehaviour
 {
     public float MaxSpeed;
     private Rigidbody2D rb;
-    
+
+    //Scoring here
+    public scoring_system score; 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +22,25 @@ public class PuckMovement : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "DestroyTrigger")
+        if (col.gameObject.tag == "redgoal")
         {
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
             StartCoroutine(FadeOutAndDestroy(3));
             //ResetPuck();
+
+            score.updateBluescore(1);
+        }
+
+        else if (col.gameObject.tag == "bluegoal")
+        {
+            rb.velocity = Vector2.zero;
+            rb.isKinematic = true;
+            StartCoroutine(FadeOutAndDestroy(3));
+            //ResetPuck();
+
+            score.updateRedscore(1);
+
         }
     }
     IEnumerator FadeOutAndDestroy(float time)
@@ -44,11 +59,11 @@ public class PuckMovement : MonoBehaviour
         
     }
 
-    // TODO: TO BE MODIFIED
-    //void ResetPuck()
-    //{
-    //    Instantiate(gameObject, new Vector2(0, 0), Quaternion.identity);
-    //    gameObject.SetActive(true);
-    //}
+     //TODO: TO BE MODIFIED
+    /*void ResetPuck()
+    {
+        Instantiate(gameObject, new Vector2(0, 0), Quaternion.identity);
+        gameObject.SetActive(true);
+    } */
 
 }

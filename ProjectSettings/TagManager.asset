@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Puck
   - DestroyTrigger
+  - redgoal
+  - bluegaol
+  - bluegoal
   layers:
   - Default
   - TransparentFX
