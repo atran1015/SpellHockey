@@ -6,11 +6,11 @@ public class PuckMovement : MonoBehaviour
 {
     public float MaxSpeed;
     private Rigidbody2D rb;
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
     }
 
     private void FixedUpdate()
@@ -24,7 +24,8 @@ public class PuckMovement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
-            StartCoroutine(FadeOutAndDestroy(5));
+            StartCoroutine(FadeOutAndDestroy(3));
+            //ResetPuck();
         }
     }
     IEnumerator FadeOutAndDestroy(float time)
@@ -38,7 +39,16 @@ public class PuckMovement : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        Destroy(gameObject);
+        
+        gameObject.SetActive(false);
+        
     }
-    
+
+    // TODO: TO BE MODIFIED
+    //void ResetPuck()
+    //{
+    //    Instantiate(gameObject, new Vector2(0, 0), Quaternion.identity);
+    //    gameObject.SetActive(true);
+    //}
+
 }
