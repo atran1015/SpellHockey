@@ -8,11 +8,13 @@ public class MainMenu : MonoBehaviour
     //When Play Game button is pressed, move to gameplay scene
     public void PlayGame()
     {
-        SceneManager.LoadScene(sceneName: "GameScene");
+        //SceneManager.LoadScene(sceneName: "GameScene");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("GameScene");
     }
     public void GoToCredits()
     {
-        SceneManager.LoadScene(sceneName: "CreditsScene");
+        SceneManager.LoadScene("CreditsScene");
     }
 
     public void QuitGame()

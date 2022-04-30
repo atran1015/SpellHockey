@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class scoring_system : MonoBehaviour
 {
+    
+
     public int blueScore;
     public int redScore;
     
@@ -34,7 +36,7 @@ public class scoring_system : MonoBehaviour
         //bluescoreTxt.text = "B. Score: " + blueScore;
         //redscoreTxt.text = "R.score:" + redScore;
         redhealthbar = redhealth = 6;
-
+        
     }
 
     // Update is called once per frame
@@ -51,7 +53,11 @@ public class scoring_system : MonoBehaviour
         updateRedHealthbar();
         updateBlueHealthbar();
 
+
+        
     }
+   
+
     public void updateBluescore(int score)
     {
         blueScore += score;
@@ -149,4 +155,4 @@ public class scoring_system : MonoBehaviour
                 break;
         }
     }
-    }
+}

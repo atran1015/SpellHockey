@@ -29,7 +29,7 @@ public class PuckMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
 
-            StartCoroutine(FadeOut(3));
+            StartCoroutine(FadeOut(2));
             score.updateBluescore(1);
 
             StartCoroutine(ResetPuck());
@@ -39,11 +39,11 @@ public class PuckMovement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
-            StartCoroutine(FadeOut(3));
+            StartCoroutine(FadeOut(2));
             score.updateRedscore(1);
             StartCoroutine(ResetPuck());
 
-        }
+        } 
     }
     IEnumerator FadeOut(float time)
     {
@@ -64,7 +64,7 @@ public class PuckMovement : MonoBehaviour
     private IEnumerator ResetPuck()
     {
 
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(2);
         rb.velocity = rb.position = new Vector2(0, 0);
         rb.isKinematic = false;
         transform.GetComponent<Renderer>().material.color = originalColor;
