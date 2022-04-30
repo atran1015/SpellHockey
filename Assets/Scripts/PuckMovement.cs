@@ -6,11 +6,15 @@ public class PuckMovement : MonoBehaviour
 {
     public float MaxSpeed;
     private Rigidbody2D rb;
-    
+
+    private Color originalColor;
+    //Scoring here
+    public scoring_system score;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        originalColor = transform.GetComponent<Renderer>().material.color;
     }
 
     private void FixedUpdate()
@@ -20,15 +24,28 @@ public class PuckMovement : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "DestroyTrigger")
+        if (col.gameObject.tag == "redgoal")
         {
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
-            StartCoroutine(FadeOutAndDestroy(3));
-            //ResetPuck();
+
+            StartCoroutine(FadeOut(3));
+            score.updateBluescore(1);
+
+            StartCoroutine(ResetPuck());
+        }
+
+        else if (col.gameObject.tag == "bluegoal")
+        {
+            rb.velocity = Vector2.zero;
+            rb.isKinematic = true;
+            StartCoroutine(FadeOut(3));
+            score.updateRedscore(1);
+            StartCoroutine(ResetPuck());
+
         }
     }
-    IEnumerator FadeOutAndDestroy(float time)
+    IEnumerator FadeOut(float time)
     {
         float elapsedTime = 0;
         Color startingColor = transform.GetComponent<Renderer>().material.color;
@@ -39,16 +56,19 @@ public class PuckMovement : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        
-        gameObject.SetActive(false);
-        
+
+
     }
 
-    // TODO: TO BE MODIFIED
-    //void ResetPuck()
-    //{
-    //    Instantiate(gameObject, new Vector2(0, 0), Quaternion.identity);
-    //    gameObject.SetActive(true);
-    //}
+
+    private IEnumerator ResetPuck()
+    {
+
+        yield return new WaitForSecondsRealtime(3);
+        rb.velocity = rb.position = new Vector2(0, 0);
+        rb.isKinematic = false;
+        transform.GetComponent<Renderer>().material.color = originalColor;
+
+    }
 
 }
