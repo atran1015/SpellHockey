@@ -16,36 +16,27 @@ public class WinLose : MonoBehaviour
     private static int opponentScore;
 
     // Update is called once per frame
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
     void Update()
     {
         playerScore = score.redhealth;
         opponentScore = score.bluehealth;
         if (playerScore == 1)
         {
-            if (isOnHold == true)
-            {
-
-                PlayGame();
-            }
-            else
-            {
-                lose.gameObject.SetActive(true);
-                win.gameObject.SetActive(false);
-                PauseGame();
-            }
+            lose.gameObject.SetActive(true);
+            win.gameObject.SetActive(false);
+            PauseGame();
+            
         } 
         else if (opponentScore == 1)
         {
-            if (isOnHold == true)
-            {
-                PlayGame();
-            }
-            else
-            {
-                lose.gameObject.SetActive(false);
-                win.gameObject.SetActive(true);
-                PauseGame();
-            }
+            lose.gameObject.SetActive(true);
+            win.gameObject.SetActive(false);
+            PauseGame();
+            
         }
 
     }
@@ -69,7 +60,7 @@ public class WinLose : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(sceneName: "MainMenuScene");
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     public void QuitGame()
