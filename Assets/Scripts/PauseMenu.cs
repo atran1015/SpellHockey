@@ -15,9 +15,11 @@ public class PauseMenu : MonoBehaviour
         {
             if (isPaused == true)
             {
+                
                 PlayGame();
             } else
             {
+                Cursor.visible = true;
                 PauseGame();
             }
         }
@@ -36,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        Cursor.visible = false;
     }
 
     public void RestartGame()

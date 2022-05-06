@@ -26,17 +26,18 @@ public class WinLose : MonoBehaviour
         opponentScore = score.bluehealth;
         if (playerScore == 1)
         {
-            lose.gameObject.SetActive(true);
-            win.gameObject.SetActive(false);
+            // display win/lose pop-up
+            //lose.gameObject.SetActive(true);
+            //win.gameObject.SetActive(false);
             PauseGame();
-            
-        } 
+
+        }
         else if (opponentScore == 1)
         {
-            lose.gameObject.SetActive(true);
-            win.gameObject.SetActive(false);
+            //lose.gameObject.SetActive(true);
+            //win.gameObject.SetActive(false);
             PauseGame();
-            
+
         }
 
     }
@@ -58,9 +59,16 @@ public class WinLose : MonoBehaviour
         isOnHold = true;
     }
 
-    public void MainMenu()
+    //public void MainMenu()
+    //{
+    //    SceneManager.LoadScene("MainMenuScene");
+    //}
+    public void RestartGame()
     {
-        SceneManager.LoadScene("MainMenuScene");
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        isOnHold = false;
     }
 
     public void QuitGame()
