@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1317
-  m_MinSize: {x: 877, y: 492}
-  m_MaxSize: {x: 16002, y: 14042}
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 4029
+  controlID: 8744
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,10 +135,10 @@ MonoBehaviour:
     y: 0
     width: 1955
     height: 1317
-  m_MinSize: {x: 602, y: 492}
-  m_MaxSize: {x: 12002, y: 14042}
+  m_MinSize: {x: 605, y: 492}
+  m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 3988
+  controlID: 8745
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1955
     height: 835
-  m_MinSize: {x: 602, y: 221}
-  m_MaxSize: {x: 12002, y: 4021}
+  m_MinSize: {x: 605, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 3967
+  controlID: 8724
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,7 +221,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 64ddffff26deffff44deffff1edfffff36dfffff3edfffff96e1ffffdeeaffff00f8ffffa4f9ffff3afbffff324500007245000038460000564600009a4600003267000058670000
+      m_ExpandedIDs: 76caffff94caffff6acbffff6ecbffff74cbffff82cfffff00d0ffff22d1ffffc0d9ffffded9ffffe0d9ffffe4d9ffffe8d9ffff84e1fffffce1ffff1ae2ffff1ce2ffff20e2ffff24e2ffffa6eaffff70f4ffff8ef4ffff62f5ffff76f5ffff7cf5ffff3ef6ffff72f6ffffc6f6ffff1ef7ffff3af7ffff54f7ffffe2f7ffff3afbffff266200003c62000096620000a66200001e66000032660000546600005e660000aa660000126700003a6700004e710000627100007a710000847100008e710000da710000be830000f4830000fe8300004a840000da8400004c850000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -264,8 +264,8 @@ MonoBehaviour:
     y: 0
     width: 990
     height: 835
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1280, y: 720, z: 0}
+    m_Target: {x: -0.444668, y: -0.094204016, z: -0.14133869}
     speed: 2
-    m_Value: {x: 1280, y: 720, z: 0}
+    m_Value: {x: -0.444668, y: -0.094204016, z: -0.14133869}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -359,11 +359,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0, y: 0, z: 0, w: 0.99999994}
   m_Size:
-    m_Target: 1468.6047
+    m_Target: 8.736378
     speed: 2
-    m_Value: 1468.6047
+    m_Value: 8.736378
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -381,7 +381,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -505,21 +505,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Audio
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 90
   m_LastFolders:
-  - Assets/Audio
+  - Assets/Scenes
   m_LastFoldersGridSize: 90
   m_LastProjectPath: D:\gamedev\VGDC\Spell Hockey
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9c440000
-    m_LastClickedID: 17564
+    m_SelectedIDs: a6440000
+    m_LastClickedID: 17574
     m_ExpandedIDs: 00000000924400009444000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -573,8 +573,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b8700000
-    m_LastClickedInstanceID: 28856
+    m_SelectedInstanceIDs: 26850000
+    m_LastClickedInstanceID: 34086
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003858000000000000
     m_RenameOverlay:
@@ -860,7 +860,7 @@ MonoBehaviour:
     m_CachedPref: 247
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 28856
+  m_LastInspectedObjectInstanceID: 34086
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:

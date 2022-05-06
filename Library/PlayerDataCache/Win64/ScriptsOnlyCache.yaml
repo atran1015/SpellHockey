@@ -871,4 +871,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/CreditsScene.unity
-  playerPath: D:/gamedev/VGDC/Spell Hockey/Builds/Richospell.exe
+  playerPath: D:/gamedev/VGDC/Spell Hockey/Richospell/Richospell.exe
